@@ -33,7 +33,7 @@ function fSearch(nodes, folderName, record) {
 // Target folder taken from extension settings page.
 chrome.action.onClicked.addListener(async (tab) => {
   chrome.storage.sync
-    .get({ folderName: "Bookmarks Bar" })
+    .get({ folderName: "" })
     .then((items) => items.folderName)
     .then((folderName) =>
       chrome.bookmarks.getTree().then((tree) => {

@@ -17,7 +17,7 @@ const saveOptions = () => {
 const restoreOptions = () => {
   chrome.storage.sync.get(
     {
-      folderName: "Bookmarks Bar",
+      folderName: "",
     },
     (items) => {
       document.getElementById("folderName").value = items.folderName;
